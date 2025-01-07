@@ -1,0 +1,1 @@
+window.location.replace('https://zero0o2.github.io')
