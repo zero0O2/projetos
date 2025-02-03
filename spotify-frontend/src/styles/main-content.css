@@ -1,0 +1,229 @@
+
+.mainContainer{
+  max-width: 80vw;
+    max-height: 100vh;
+    margin-left: 320px;
+    margin-right: 56px;
+}
+
+.mainContainer .headerNavigation{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px;
+    margin: 10px;
+    border-radius: 8px;
+    background-color: #121212;
+}
+
+.mainContainer .headerNavigation .navgation{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 0 10px;
+}
+
+.mainContainer .headerNavigation .navgation .headerArrow{
+    display: flex;
+    align-items: center;
+}
+
+.mainContainer .headerNavigation .navgation .arrow-left{
+    margin-right: 1.25em;
+}
+
+
+.arrow-right,.arrow-left{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    background: var(--bg-icon);
+    background-color: var(--bg-arrow-color);
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+}
+
+.mainContainer .headerNavigation .navgation .headerLogin{
+    display: flex;
+    align-items: center;
+}
+
+.mainContainer .headerNavigation .navgation .headerSearch{
+    display: flex;
+    align-items: center;
+    width: 364px;
+    height: 48px;
+    background-color: #242424;
+    border-radius: 500px;
+    border: 1px solid transparent;
+    margin-left: 15px;
+}
+
+.mainContainer .headerNavigation .navgation
+.headerSearch img{
+    width: 16px;
+    height: 16px;
+    margin-left: 10px;
+}
+
+.mainContainer .headerNavigation .navgation
+.headerSearch input{
+    background:transparent;
+    border: none;
+    padding: 0 100px 0 12px;
+    color: #fff;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    outline: none;
+}
+
+.headerLogin .subscribe{
+    color: #a7a7a7;
+    font-size: 16px;
+    font-weight: 700;
+    background-color: transparent;
+    margin-right: 32px;
+}
+
+.headerLogin .login{
+    width: 100px;
+    height: 48px;
+    color: #000;
+    font-size: 16px;
+    font-weight: 700;
+    border-radius: 40px;
+}
+
+
+
+/* Playlist */
+
+
+.playlistSection{
+  background-color: #121212;
+  margin: 10px;
+  padding: 45px 30px;
+  border-radius: 8px;
+}
+
+.playlistSection .result{
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  width: 100%;
+}
+
+
+.playlistSection .result .text{
+  color: #fff;
+  font-size: 1.53em;
+  font-weight: 700;
+}
+
+.playlistSection .result .title{
+  font-size: 2.0em;
+  margin-bottom: 50px;
+}
+
+.hidden{
+  display: none;
+}
+
+/* Section de Cards */
+.sectionCards{
+  display: flex;
+  height: 350px;
+}
+
+.sectionCardsGrid{
+  display: grid;
+  justify-items: center;
+  width: 100%;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr ;
+  grid-gap: 16px;
+  gap: 16px;
+  overflow: scroll;
+}
+
+.sectionCardsGrid::-webkit-scrollbar{
+  display: none;
+}
+
+.sectionCards .card {
+  width: 235px;
+  height: 200px;
+  overflow: hidden;
+  display: flex;
+  position: relative;
+  border-radius: 8px;
+  padding: 15px;
+}
+
+.sectionCards .card .titleMusic{
+  font-size: 25px;
+  color: #fff;
+  font-weight: 700;
+}
+
+.sectionCards .card img{
+  width: 110px;
+  height: 110px;
+  position: absolute;
+  right:-20px;
+  bottom: -8px;
+  transform: rotate(25deg);
+  box-shadow: -5px 5px 10px rgba(0, 0, 0, 0.207);
+}
+
+/* Cor dos cards */
+
+.sectionCards .card1{
+  background-color: #006450;
+}
+.sectionCards .card2{
+  background-color: rgb(132, 0, 231);
+}
+.sectionCards .card3{
+  background-color: rgb(30, 50, 100);
+}
+.sectionCards .card4{
+  background-color: rgb(140, 25, 50);
+}
+.sectionCards .card5{
+  background-color: rgb(232, 17, 91);
+}
+.sectionCards .card6{
+  background-color: rgb(83, 122, 161);
+}
+.sectionCards .card7{
+  background-color: rgb(142, 102, 172);
+}
+.sectionCards .card8{
+  background-color: rgb(20, 138, 8);
+}
+.sectionCards .card9{
+  background-color: rgb(30, 50, 100);
+}
+.sectionCards .card10{
+  background-color: rgb(233, 20, 41);
+}
+.sectionCards .card11{
+  background-color: rgb(80, 55, 80);
+}
+.sectionCards .card12{
+  background-color: rgb(216, 64, 0);
+}
+.sectionCards .card13{
+  background-color: rgb(186, 93, 7);
+}
+.sectionCards .card14{
+  background-color: rgb(0, 30, 80);
+}
+.sectionCards .card15{
+  background-color: rgb(60, 30, 80);
+}
