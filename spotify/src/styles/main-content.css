@@ -3,7 +3,7 @@
   max-width: 80vw;
     max-height: 100vh;
     margin-left: 320px;
-    margin-right: 56px;
+    margin-right: 0;
 }
 
 .mainContainer .headerNavigation{
@@ -130,10 +130,6 @@
   margin-bottom: 50px;
 }
 
-.hidden{
-  display: none;
-}
-
 /* Section de Cards */
 .sectionCards{
   display: flex;
@@ -226,4 +222,94 @@
 }
 .sectionCards .card15{
   background-color: rgb(60, 30, 80);
+}
+
+
+/* Local Artista */
+
+.artistsSection{
+  display: flex;
+  width: 100%;
+  overflow-x: scroll;
+}
+
+.artistsSection::-webkit-scrollbar{
+  display: none;
+}
+
+.artistsCard{
+  width: 200px;
+  height: 290px;
+  border-radius: 8px;
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 15px 45px 15px;
+  gap: 12px;
+  transition: all ease .3s;
+  text-decoration: none;
+  color: #a7a7a7;
+}
+
+.artistsCard:hover{
+  background-color: #242424;
+  cursor: pointer;
+}
+.artistsCard .play{
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: green;
+  border-radius: 50%;
+  position: absolute;
+  right: 20px;
+  top:140px;
+  transition: all .3s ease;
+}
+
+.artistsCard .play .fa{
+  color: #000;
+}
+
+/* .artistsCard:hover::after{
+  content: "";
+  width: 50px;
+  height: 50px;
+  background-color: green;
+  border-radius: 50%;
+  position: absolute;
+  right: 20px;
+  top:140px;
+} */
+
+.artistsCard .artistsFoto{
+  width: 170px;
+  height: 170px;
+  border-radius: 50%;
+  box-shadow: 0px 0px 10px 3px rgba(0, 0, 0, 0.181);
+}
+
+.artistsCard .artistsContent{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.artistsCard .artistsContent .artistsName{
+  font-size: 19px;
+  font-weight: 600;
+  color: white;
+}
+
+.artistsCard .artistsContent .indentifier{
+  font-size: 15px;
+}
+
+.hidden{
+  display: none !important;
 }
