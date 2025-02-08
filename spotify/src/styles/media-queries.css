@@ -85,8 +85,16 @@
   }
   
   .mainContainer .headerNavigation .navgation .headerSearch{
-    max-width: 320px;
+    max-width: 300px;
   }
+
+  .headerNavigation .navgation .spotifyFavico{
+    display: block;
+    width: 40px;
+    height: 40px;
+    margin: 0 10px 0 0;
+  }
+
   .playlistSection{
     margin: 10px;
     padding: 45px 10px;

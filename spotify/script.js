@@ -13,7 +13,7 @@ if(horaAtual <=5){
     msg.innerHTML = "Boa noite"
 }
 
-/* --------------------------------------------- */
+/* -------------------  Artists Display  -------------------------- */
 
 const searchInput = document.getElementById('searchInput')
 const resultPlaylist = document.getElementById('result')
@@ -23,8 +23,25 @@ const playlistSection = document.getElementById('playlistSection')
 
 const api = `api-artists/artists.json`;
 
+//                          Funções     
 
-function Api(resultArtists , searchTerm){
+function animationPlay(artistsCard,play){
+    artistsCard.forEach((element,index)=>{
+        element.addEventListener('mouseover',function(){
+            play[index].classList.remove('hidden')
+        })
+        element.addEventListener('mouseout',function(){
+            play[index].classList.add('hidden')
+        })
+    })
+}
+
+function artistsPage(name){
+    console.log(name)
+}
+
+
+function artistsDisplay(resultArtists , searchTerm){
     resultArtists.innerHTML = ''
     fetch(api)
         .then((response) => response.json())
@@ -33,6 +50,7 @@ function Api(resultArtists , searchTerm){
             api.forEach((element,index) => {
                 let filter = element.name.toLowerCase()
                 let string = searchTerm
+                let name = element.name
                 if(filter.indexOf(string) != -1){
 
                     resultArtists.innerHTML += `
@@ -42,7 +60,7 @@ function Api(resultArtists , searchTerm){
                            <i class="fa-solid fa-play"></i>
                         </span>
                         <div class="artistsContent">
-                            <span class="artistsName" id="name">${element.name}</span>
+                            <span class="artistsName" id="name-${index}">${element.name}</span>
                             <span class="indentifier" id="indentifier">${element.genre}</span>
                         </div>
                     </a>`                    
@@ -51,12 +69,13 @@ function Api(resultArtists , searchTerm){
 
             const artistsCard = document.querySelectorAll(`.artistsCard`)
             const play = document.querySelectorAll('.play')
-            artistsCard.forEach((element,index)=>{
-                element.addEventListener('mouseover',function(){
-                    play[index].classList.remove('hidden')
-                })
-                element.addEventListener('mouseout',function(){
-                    play[index].classList.add('hidden')
+            const name = document.querySelectorAll('.artistsName')
+
+            animationPlay(artistsCard,play)
+
+            artistsCard.forEach((element,index) => {
+                element.addEventListener('click',function(){
+                    console.log(name[index].textContent)
                 })
             })
 
@@ -73,6 +92,6 @@ document.addEventListener('input', function() {
         resultPlaylist.classList.add('hidden')
         divArtists.classList.remove('hidden')
     }
-    Api(resultArtists ,searchTerm)
+    artistsDisplay(resultArtists ,searchTerm)
 })
 

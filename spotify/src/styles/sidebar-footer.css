@@ -29,6 +29,10 @@ body{
     padding: 10px 10px;
 }
 
+.headerNavigation .navgation .spotifyFavico{
+    display: none;
+  }
+
 .sidebarNavigation .logo{
     background-color: #121212;
     display: flex;
