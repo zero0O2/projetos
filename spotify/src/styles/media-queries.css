@@ -1,4 +1,4 @@
-@media screen and (max-width:1090px){
+@media screen and (max-width:1170px){
   .sidebar{
     display: none; 
   }
@@ -11,7 +11,7 @@
   }
 
 }
-@media screen and (max-width:760px){
+@media screen and (max-width:790px){
   .headerArrow .arrow-left{
     display: none;
   }
@@ -45,7 +45,7 @@
 }
 
 
-@media screen and (max-width:680px){
+@media screen and (max-width:710px){
   .headerLogin .subscribe{
     display: none;
   }
@@ -75,7 +75,7 @@
 }
 
 
-@media screen and (max-width:510px){
+@media screen and (max-width:550px){
   .headerLogin .login{
     display: none;
   }
@@ -96,8 +96,6 @@
   }
 
   .playlistSection{
-    margin: 10px;
-    padding: 45px 10px;
     border-radius: 8px;
   }
   

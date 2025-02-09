@@ -1,0 +1,88 @@
+
+.artistPlay{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.artistAside{
+    background-position: center center;
+    background-repeat: none;
+    background-size: cover;
+    border-radius: 8px 8px 0 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    width: 100%;
+    height: 40%;
+    padding: 12vh 20px;
+}
+
+.artistAside .title{
+    color: white;
+    font-size: 7vw;
+    font-weight: 900;
+    text-shadow: 4px 4px 10px rgba(0, 0, 0, 0.077);
+}
+
+.artistPlay .artistMusic{
+    padding: 30px 20px;
+}
+
+.artistPlay .artistMusic div{
+    display: flex;
+    align-items: center;
+    gap: 0 40px;
+}
+
+.artistPlay .artistMusic button{
+    background-color: transparent;
+    font-size: 16px;
+    color: white;
+    display: flex;
+    align-items: center;
+}
+
+
+.artistPlay .artistMusic .fa-play{
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 20px;
+    color: black;
+    background-color: #35d535;
+}
+
+.artistPlay .artistMusic .fa-play:hover{
+    transform: scale(1.04);
+    background-color: rgb(86, 237, 86);
+    transition: all 0.08s;
+}
+
+.artistPlay .artistMusic button#seguir{
+    border: 1px solid rgb(156, 156, 156);
+    padding: 5px 30px;
+    border-radius: 20px;
+}
+
+.artistPlay .artistMusic button#seguir:hover{
+    transition: all 0.08s;
+    border: 1px solid rgb(255, 255, 255);
+    transform: scale(1.04);
+    
+}
+
+.artistPlay .artistMusic button#mais{
+    font-size: 26px;
+    display: flex;
+    align-items: center;
+    padding-bottom:12px;
+    color: rgb(156, 156, 156);
+}
+.artistPlay .artistMusic button#mais:hover{
+    color: #fff;
+}
+

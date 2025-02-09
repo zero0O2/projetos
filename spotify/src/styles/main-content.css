@@ -1,9 +1,12 @@
 
+.mainDefalt{
+  width: 100%;
+  padding: 0 10px 0 10px;
+}
+
 .mainContainer{
-  max-width: 80vw;
+    min-width: 100%;
     max-height: 100vh;
-    margin-left: 320px;
-    margin-right: 0;
 }
 
 .mainContainer .headerNavigation{
@@ -11,7 +14,7 @@
     justify-content: space-between;
     align-items: center;
     padding: 16px;
-    margin: 10px;
+    margin: 12px 0;
     border-radius: 8px;
     background-color: #121212;
 }
@@ -106,9 +109,8 @@
 
 .playlistSection{
   background-color: #121212;
-  margin: 10px;
-  padding: 45px 30px;
   border-radius: 8px;
+  width: 100%;
 }
 
 .playlistSection .result{
@@ -116,6 +118,7 @@
   flex-direction: column;
   gap: 30px;
   width: 100%;
+  padding: 70px 20px 20px 20px;
 }
 
 
@@ -126,7 +129,7 @@
 }
 
 .playlistSection .result .title{
-  font-size: 2.0em;
+  font-size: 2.5em;
   margin-bottom: 50px;
 }
 
@@ -231,6 +234,7 @@
   display: flex;
   width: 100%;
   overflow-x: scroll;
+  padding: 20px 10px;
 }
 
 .artistsSection::-webkit-scrollbar{
