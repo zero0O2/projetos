@@ -1,7 +1,7 @@
 {
   "artists": [
     {
-      "id": 1,
+      "id": 0,
       "name": "Racionais MC's",
       "slug": "racionais_mcs",
       "genre": "Hip-Hop/rap",
@@ -9,7 +9,7 @@
       "urlImg": "https://akamai.sscdn.co/uploadfile/letras/fotos/8/1/a/1/81a118cac9567d9745e2e25488062683.jpg"
     },
     {
-      "id": 2,
+      "id": 1,
       "name": "The Notorious B.I.G.",
       "slug": "the_notoriousbig",
       "genre": "Hip-Hop/rap",
@@ -17,7 +17,95 @@
       "urlImg": "https://cdn-images.dzcdn.net/images/cover/78af18fc11e9d880befd78777baffd9e/500x500.jpg"
     },
     {
-      "id": 3,
+      "id": 2,
+      "name": "beabadoobee",
+      "slug": "beabadoobee",
+      "genre": "Alternativa/indie",
+      "banner": "./src/assets/banners/beabadoobe.jpg",
+      "urlImg": "https://i.scdn.co/image/ab6761610000e5ebe7c6cea0c83857388127fced"
+    },
+    {
+      "id": 1,
+      "name": "The Notorious B.I.G.",
+      "slug": "the_notoriousbig",
+      "genre": "Hip-Hop/rap",
+      "banner": "./src/assets/banners/the_notoriousbig.webp",
+      "urlImg": "https://cdn-images.dzcdn.net/images/cover/78af18fc11e9d880befd78777baffd9e/500x500.jpg"
+    },
+    {
+      "id": 2,
+      "name": "beabadoobee",
+      "slug": "beabadoobee",
+      "genre": "Alternativa/indie",
+      "banner": "./src/assets/banners/beabadoobe.jpg",
+      "urlImg": "https://i.scdn.co/image/ab6761610000e5ebe7c6cea0c83857388127fced"
+    },
+    {
+      "id": 0,
+      "name": "Racionais MC's",
+      "slug": "racionais_mcs",
+      "genre": "Hip-Hop/rap",
+      "banner": "./src/assets/banners/racionais_mcs.jpg",
+      "urlImg": "https://akamai.sscdn.co/uploadfile/letras/fotos/8/1/a/1/81a118cac9567d9745e2e25488062683.jpg"
+    },
+    {
+      "id": 1,
+      "name": "The Notorious B.I.G.",
+      "slug": "the_notoriousbig",
+      "genre": "Hip-Hop/rap",
+      "banner": "./src/assets/banners/the_notoriousbig.webp",
+      "urlImg": "https://cdn-images.dzcdn.net/images/cover/78af18fc11e9d880befd78777baffd9e/500x500.jpg"
+    },
+    {
+      "id": 1,
+      "name": "The Notorious B.I.G.",
+      "slug": "the_notoriousbig",
+      "genre": "Hip-Hop/rap",
+      "banner": "./src/assets/banners/the_notoriousbig.webp",
+      "urlImg": "https://cdn-images.dzcdn.net/images/cover/78af18fc11e9d880befd78777baffd9e/500x500.jpg"
+    },
+    {
+      "id": 2,
+      "name": "beabadoobee",
+      "slug": "beabadoobee",
+      "genre": "Alternativa/indie",
+      "banner": "./src/assets/banners/beabadoobe.jpg",
+      "urlImg": "https://i.scdn.co/image/ab6761610000e5ebe7c6cea0c83857388127fced"
+    },
+    {
+      "id": 1,
+      "name": "The Notorious B.I.G.",
+      "slug": "the_notoriousbig",
+      "genre": "Hip-Hop/rap",
+      "banner": "./src/assets/banners/the_notoriousbig.webp",
+      "urlImg": "https://cdn-images.dzcdn.net/images/cover/78af18fc11e9d880befd78777baffd9e/500x500.jpg"
+    },
+    {
+      "id": 2,
+      "name": "beabadoobee",
+      "slug": "beabadoobee",
+      "genre": "Alternativa/indie",
+      "banner": "./src/assets/banners/beabadoobe.jpg",
+      "urlImg": "https://i.scdn.co/image/ab6761610000e5ebe7c6cea0c83857388127fced"
+    },
+    {
+      "id": 0,
+      "name": "Racionais MC's",
+      "slug": "racionais_mcs",
+      "genre": "Hip-Hop/rap",
+      "banner": "./src/assets/banners/racionais_mcs.jpg",
+      "urlImg": "https://akamai.sscdn.co/uploadfile/letras/fotos/8/1/a/1/81a118cac9567d9745e2e25488062683.jpg"
+    },
+    {
+      "id": 1,
+      "name": "The Notorious B.I.G.",
+      "slug": "the_notoriousbig",
+      "genre": "Hip-Hop/rap",
+      "banner": "./src/assets/banners/the_notoriousbig.webp",
+      "urlImg": "https://cdn-images.dzcdn.net/images/cover/78af18fc11e9d880befd78777baffd9e/500x500.jpg"
+    },
+    {
+      "id": 2,
       "name": "beabadoobee",
       "slug": "beabadoobee",
       "genre": "Alternativa/indie",

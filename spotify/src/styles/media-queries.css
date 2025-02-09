@@ -1,4 +1,4 @@
-@media screen and (max-width:1170px){
+@media screen and (max-width:1120px){
   .sidebar{
     display: none; 
   }
@@ -8,6 +8,22 @@
     flex-direction: column;
     justify-content: center;
     margin-left: 0px;
+  }
+  /* FOOTER */
+  
+  .footer{
+    padding: 10px 15px;
+    height: 70px;
+  }
+  .footer .footerText .text{
+    display: none;
+  }
+  .footer .footerText .title{
+    font-size: 15px;
+  }
+  
+  .footer .footerButton{
+    padding: 5px 20px;
   }
 
 }
@@ -56,22 +72,6 @@
     margin-left: 0;
   }
 
-  /* FOOTER */
-
-  .footer{
-    padding: 10px 15px;
-    height: 70px;
-  }
-  .footer .footerText .text{
-    display: none;
-  }
-  .footer .footerText .title{
-    font-size: 15px;
-  }
-
-  .footer .footerButton{
-    padding: 5px 20px;
-  }
 }
 
 

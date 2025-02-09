@@ -51,78 +51,90 @@ function seguirButton(buttonSeguir){
 
 
 
-function artistsForEach(artistsCard,play,nome,api){
+
+function artistsForEach(artistsCard,play,nome,api,){
+    
     artistsCard.forEach((element,index)=>{
         // ANIMAÇÃO
+        
         element.addEventListener('mouseover',function(){
             play[index].classList.remove('hidden')
         })
         element.addEventListener('mouseout',function(){
             play[index].classList.add('hidden')
         })
+        
         // DISPLAY DE ARTISTA
         element.addEventListener('click',function(){
             resultArtists.classList.add('hidden')
             footer.classList.add('hidden')
             artistsPlay.classList.remove('hidden')
+            
             searchInput.value = ''
             artistsPlay.innerHTML = `
             <div class='artistAside' id='background'>
-                <span class="title" id="titleArtist">${nome[index].textContent}</span>
-            </div>
-            <div class="artistMusic">
-                <div>
-                    <button class="fa-solid fa-play"></button>
-                    <button id="seguir"></button>
-                    <button id="mais">
-                        <p>. . .</p>
-                    </button>
+            <span class="title" id="titleArtist">${nome[index].textContent}</span>
                 </div>
-            </div>`
-            let buttonSeguir = document.getElementById('seguir')
-            seguirButton(buttonSeguir)
-            let background = document.getElementById('background')
-            background.style.backgroundImage = `none`
-            background.style.backgroundImage = `url('${api[index].banner}')`
-        })
-    })
-}
-
-
-function artistsDisplay(resultArtists , searchTerm){
-    resultArtists.innerHTML = ''
-    fetch(api)
-    .then((response) => response.json())
-    .then((result) => result.artists)
-    .then((api) => {
-        api.forEach((element,index) => {
-            let filter = element.name.toLowerCase()
-            let string = searchTerm
-            let name = element.name
-            if(filter.indexOf(string) != -1){
+                <div class="artistMusic">
+                <div>
+                <button class="fa-solid fa-play"></button>
+                <button id="seguir"></button>
+                <button id="mais">
+                <p>. . .</p>
+                </button>
+                </div>
+                </div>`
                 
-                resultArtists.innerHTML += `
-                    <a class="artistsCard" id="artistsCard-${index}">
-                        <img class="artistsFoto" id="artistsFoto" src="${element.urlImg}">
-                        <span class="hidden play" id="play-${index}">
-                            <i class="fa-solid fa-play"></i>
-                        </span>
-                        <div class="artistsContent">
-                            <span class="artistsName" id="name-${index}">${element.name}</span>
-                            <span class="indentifier" id="indentifier">${element.genre}</span>
-                        </div>
-                    </a>`                    
-            }
-        })
-        const artistsCard = document.querySelectorAll(`.artistsCard`)
-        const play = document.querySelectorAll('.play')
-        const nome = document.querySelectorAll('.artistsName')
-        artistsForEach(artistsCard,play,nome,api)
-
-
-    });
-}
+                    let buttonSeguir = document.getElementById('seguir')
+                    seguirButton(buttonSeguir)
+                    let background = document.getElementById('background')
+                    background.style.backgroundImage = `none`
+                    background.style.backgroundImage = `url('${api[index].banner}')`
+                })
+            })
+        }
         
+        
+        function artistsDisplay(resultArtists , searchTerm){
+            resultArtists.innerHTML = ''
+            
+            fetch(api)
+            .then((response) => response.json())
+            .then((result) => result.artists)
+            .then((api) => {
+                api.forEach((element,index) => {
+                    let filter = element.name.toLowerCase()
+                    let string = searchTerm
+                    
+                    resultArtists.innerHTML += `
+                    <a class="artistsCard" id="artistsCard-${index}">
+                    <img class="artistsFoto" id="artistsFoto" src="${element.urlImg}">
+                    <span class="hidden play" id="play-${index}">
+                    <i class="fa-solid fa-play"></i>
+                    </span>
+                    <div class="artistsContent">
+                    <span class="artistsName" id="name-${index}">${element.name}</span>
+                    <span class="indentifier" id="indentifier">${element.genre}</span>
+                    </div>
+                    </a>`
+                    
+                    const artistsCard = document.querySelectorAll(`.artistsCard`)
+                    
+                    if(filter.indexOf(string) == -1){
+                        artistsCard[index].classList.add('hidden')
+                    }
+                    
+                    const play = document.querySelectorAll('.play')
+                    const nome = document.querySelectorAll('.artistsName')
+                    
+                    artistsForEach(artistsCard,play,nome,api)
+                    
+                })
+                
+                
+            });
+        }
+
         
         document.addEventListener('input', function() {
             const searchTerm = searchInput.value.toLowerCase()  
@@ -134,9 +146,10 @@ function artistsDisplay(resultArtists , searchTerm){
                 artistsPlay.classList.add('hidden')
                 divArtists.classList.remove('hidden')
                 resultArtists.classList.remove('hidden')
+                footer.classList.remove('hidden')
                 
             }
             artistsDisplay(resultArtists ,searchTerm)
         })
-
+        
         
